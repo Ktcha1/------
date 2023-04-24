@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title> Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding-left: 0;
+            
+        }
+        ul>li{
+            display: inline-block;
+            background-color: aqua;
+            padding: 5px 10px;
+            position: relative;
+            width: 100px;
+        }
+        .h{
+            display: none;
+            position: absolute;
+        }
+        .li.hover>.h{
+            display: block;
+            
+        }
+
+        ul.h{
+            left: 0px;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="menu">
-        <div class="st">
-            <img src="картинка.png" alt="картинка"> 
-            <p>Текст</p>
-        </div>
-
-        <div class="st">
-            <img src="картинка.png" alt="картинка"> 
-            <p>Текст</p>
-        </div>
-
-        <div class="st">
-            <img src="картинка.png" alt="картинка"> 
-            <p>Текст</p>
-        </div>
-
-        <div class="st">
-            <img src="картинка.png" alt="картинка"> 
-            <p>Текст</p>
-        </div>
-
-        <div class="st">
-            <img src="картинка.png" alt="картинка"> 
-            <p>Текст</p>
-        </div>
-    </div>
+    <ul>
+        <li>текст</li>
+        <li>текст
+            <ul class="h hl2">
+                <li>др текст</li>
+                <li>др текст</li>
+                <li>др текст</li>
+            </ul>
+            
+        </li>
+        <li>текст</li>
+        <li>текст</li>
+        <li>текст</li>
+    </ul>
 </body>
 </html>

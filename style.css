@@ -1,12 +1,32 @@
 body{
     background-color: gray;
+    
+    margin-left: 0;
+    
 }
 
 .menu{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    background-color: antiquewhite;
+    width: 100px;
+    gap: 50px;
+    position: absolute;
+    
+    
 }
 
 .st{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
